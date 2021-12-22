@@ -325,7 +325,7 @@ int cache_eviction(){ // 캐시 블럭 10개를 처음부터 보면서 가장 �
             break; 
         }
         if(cache.cacheobjs[i].LRU < min){    /*비어 있는 캐시 블록을 찾지 못함.*/
-            min = cache.cacheobjs[i].LRU; // 이거 우리가 추가함. min값 갱신.
+            min = cache.cacheobjs[i].LRU; // min값 갱신.
             minindex = i;
             readerAfter(i);
             continue;
